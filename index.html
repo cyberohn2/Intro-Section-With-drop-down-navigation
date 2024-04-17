@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Intro Section</title>
+</head>
+<body>
+    <header class="flex">
+        <img src="logo.svg" alt="logo">
+        <img src="icon-menu.svg" alt="menu" class="toggle-menu" id="toggle-menu">
+        <div class=" header--container" data-visible="false" style="flex-basis: 100%;">
+            <nav class="nav flex">
+                <ul class="flex navigation">
+                    <li class="dropdown-toggle" id="feature"><span>Feature</span> <img id="arrow1" src="icon-arrow-down.svg" alt="">
+                    <ul aria-expanded="false" class="first dropdown flex">
+                        <li> <img src="icon-todo.svg" alt="Todo"><span class="medium-gray">Todo List</span></li>
+                        <li><img src="icon-calendar.svg" alt="Calendar"><span class="medium-gray">Calendar</span></li>
+                        <li><img src="icon-reminders.svg" alt="Reminders"><span class="medium-gray" >Reminders</span></li>
+                        <li><img src="icon-planning.svg" alt="Planning"><span class="medium-gray">Planning</span></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown-toggle" id="company"><span>Company</span>
+                        <img id="arrow2" src="icon-arrow-down.svg" alt="">
+                        <ul class="second dropdown flex" aria-expanded="false">
+                            <li><span class="medium-gray">History</span></li>
+                            <li><span class="medium-gray">Our Team</span></li>
+                            <li><span class="medium-gray">Blog</span></li>
+                        </ul>
+                    </li>
+                    <li><span>Careers</span></li>
+                    <li><span>About</span></li>
+                </ul>
+                <div class="user flex">
+                    <button id="login" class="medium-gray">Login</button>
+                    <button id="register" class="medium-gray">Register</button>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="grid">
+        <div class="welcome-text flex">
+            <h1>Make remote work</h1>
+            <p class="medium-gray">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button>Learn more</button>
+            <div class="clients flex">
+                <img src="client-databiz.svg" alt="Databiz">
+                <img src="client-audiophile.svg" alt="Audiophile">
+                <img src="client-meet.svg" alt="Meet">
+                <img src="client-maker.svg" alt="Maker">
+            </div>
+        </div>
+        <div class="hero-image"></div>
+    </main>    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
